@@ -1,5 +1,5 @@
 import cpp
 
-from Macro macro, MacroInvocation inv
-where inv.getMacro() = macro and macro.getName() = "ntohs" 
-select macro
+from MacroInvocation inv
+where inv.getMacroName() in [ "ntohl", "ntohll", "ntohs" ]
+select inv
