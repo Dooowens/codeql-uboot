@@ -1,5 +1,5 @@
 import cpp
 
-from MacroInvocation inv
-where inv.getMacroName() in [ "ntohl", "ntohll", "ntohs" ]
-select inv
+from MacroInvocation invoc
+where invoc.getMacroName() in [ "ntohl", "ntohll", "ntohs" ]
+select invoc
